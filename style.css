@@ -1,1 +1,22 @@
-#siia tuleb CSS kood sen stiilifail
+body {
+    background-color: #fff0f5;
+    color: #6b4055;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #d87093;
+}
+
+button {
+    background-color: #f4a6c1;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 24px;
+}
+
+button:hover {
+    background-color: #db7093;
+}
