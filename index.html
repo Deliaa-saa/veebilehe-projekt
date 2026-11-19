@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html lang="et">
-<head>
-  <meta charset="UTF-8">
-  <title>Pealeht</title>
-  <link rel="stylesheet" href="style.css">
+<html>
+<head>Doversoft
 </head>
+<title>Doversoft</title>
+<!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <body>
-  <h1>Tere tulemast meie veebilehele</h1>
-  <p>See on projekti pealehekülg</p>
-  <nav>
-    <a href="leht1.html">Esimene vaheleht</a>
-    <a href="leht2.html">Teine vaheleht</a>
-  </nav>
+    <img src="images/image.jpg" alt="Doversoft logo" width="200" height="200">
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+           <i class="bl bxl-codepen"></i>
+        </div>
+        <div class="close" id="close-btn">
+            <i class="bx bx-menu" id ="btn"></i>
+    </div>
+
+    <ul>
+        
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Nõud</span> 
+            </a>
+        <span class="tooltip">Nõud</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Toidukaubad</span> 
+            </a>
+        <span class="tooltip">Toidukaubad</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Paber</span> 
+            </a>
+        <span class="tooltip">Paber</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Koolitarbed</span> 
+            </a>
+        <span class="tooltip">Koolitarbed</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Kontoritarbed</span> 
+            </a>
+        <span class="tooltip">Kontoritarbed</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Firmast</span> 
+            </a>
+        <span class="tooltip">Firmast</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Ostutingimused</span> 
+            </a>
+        <span class="tooltip">Ostutingimused</span>
+    
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">Kontakt</span> 
+            </a>
+        <span class="tooltip">Kontakt</span>
+    
+        </li>
+        
+                
+    </ul>
+</div>
+
+<script> 
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function() {
+        sidebar.classList.toggle("active")
+    };
+</script>
+
 </body>
 </html>
