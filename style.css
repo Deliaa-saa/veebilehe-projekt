@@ -38,7 +38,7 @@ header {
     font-weight: 500;
     margin-left: 40px;
 }
-.naigation a::after {
+.navigation a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -52,7 +52,7 @@ header {
     transition: transform .5s;
 }
 
-.naigation a:hover:after {
+.navigation a:hover:after {
     transform-origin: left;
     transform: scaleX(1);
 }
