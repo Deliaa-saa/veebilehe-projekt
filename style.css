@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat; #vaja taustapit panna sen lih näidisfail
+    background: url('background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -19,7 +19,7 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: pink; #Selle rea võib ara kustutada vajadusel kui ei soovi riba ülesse
+    background: pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ header {
     background: #fff;
     color: #162938;
 }
-#üleval on leht1 algne css mida saab muuta
+/*#üleval on leht1 algne css mida saab muuta
 body {
     background-color: #fff0f5;
     color: #6b4055;
@@ -98,3 +98,4 @@ button {
 button:hover {
     background-color: #db7093;
 }
+*/
