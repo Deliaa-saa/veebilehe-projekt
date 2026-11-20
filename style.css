@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url(<img width="1920" height="1280" alt="background" src="https://github.com/user-attachments/assets/11b84b10-13cf-4041-9733-969e2c3ccd99" />) no-repeat;
     background-size: cover;
     background-position: center;
 }
