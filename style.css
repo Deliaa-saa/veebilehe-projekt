@@ -87,6 +87,16 @@ header {
     align-items: center;
 }
 
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
