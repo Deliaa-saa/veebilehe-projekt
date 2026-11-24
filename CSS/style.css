@@ -98,7 +98,15 @@ header {
     background-size: cover;
     background-position: center;
 }
+    
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
 
+.wrapper .form-box.login {
+    display: none;
+}
 .wrapper .icon-close {
     position: absolute;
     top: 0;
@@ -114,11 +122,6 @@ header {
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
-}
-    
-.wrapper .form-box {
-    width: 100%;
-    padding: 40px;
 }
 
 .form-box h2 {
