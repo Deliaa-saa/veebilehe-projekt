@@ -200,6 +200,28 @@ header {
 .login-register p a:hover {
     text-decoration: underline;
 }
+
+.about-card {
+    width: 650px;
+    margin: 120px auto 50px;
+    padding: 55px;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.20);
+}
+
+.about-card h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #162938;
+}
+
+.about-card p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    color: #162938;
+}
     
 /*#üleval on leht1 algne css mida saab muuta
 body {
