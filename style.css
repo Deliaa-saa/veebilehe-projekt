@@ -5,13 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: #fff;
 }
 header {
     position: fixed;
@@ -76,6 +71,8 @@ header {
     color: #162938;
 }
 
+
+/*Sisselogimise lehe kujundus */
 .wrapper {
     position: relative;
     width: 400px;
@@ -201,6 +198,7 @@ header {
     text-decoration: underline;
 }
 
+/*Meist lehe kujundus */
 .about-card {
     width: 650px;
     margin: 120px auto 50px;
