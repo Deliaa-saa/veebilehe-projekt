@@ -279,3 +279,86 @@ header {
     margin-bottom: 22px;
     color: #162938;
 }
+
+/* Kontaktilehe kujundus */
+
+.contact-card {
+    width: 880px;
+    margin: 120px auto 50px;
+    padding: 55px 75px;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.20);
+}
+
+.contact-card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #162938;
+    font-size: 2em;
+}
+
+.contact-card p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #162938;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #162938;
+}
+
+.contact-form textarea {
+    height: 250px;
+    resize: vertical;
+}
+
+/* Nupud */
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.contact-buttons button {
+    width: 130px;
+    height: 45px;
+    background: #162938;
+    border: 2px solid #162938;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-buttons button:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.contact-buttons .reset {
+    background: #fff;
+    color: #162938;
+}
