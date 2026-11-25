@@ -2,33 +2,37 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kontakt - Doversoft</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
 
     <header>
-        <a href="#" class="logo">Logo</a>
+        <h2 class="logo">Doversoft</h2>
 
-        <nav>
-            <a href="#">Avaleht</a>
-            <a href="#">Meist</a>
-            <a href="#">Tooted</a>
-            <a href="#" class="active">Kontakt</a>
-            <a href="#" class="login">Logi sisse</a>
+        <nav class="navigation">
+            <a href="index.html">Avaleht</a>
+            <a href="meist.html">Meist</a>
+            <a href="tooted.html">Tooted</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="index.html" class="btnLogin-popup">Logi sisse</a>
         </nav>
     </header>
 
     <main>
-        <section class="contact-box">
+
+        <section class="contact-card">
+
             <h1>Kontakt</h1>
 
-            <p class="intro">
+            <p>
                 Saada meile oma küsimus!
             </p>
 
-            <form action="#" method="post">
+            <form class="contact-form" action="#" method="post">
 
                 <input type="text" name="nimi"
                        placeholder="Teie nimi" required>
@@ -43,16 +47,18 @@
                           placeholder="Teie küsimus..."
                           required></textarea>
 
-
-                <div class="buttons">
+                <div class="contact-buttons">
                     <button type="submit">Saada</button>
                     <button type="reset" class="reset">Tühista</button>
                 </div>
 
             </form>
+
         </section>
+
     </main>
 
 </body>
 </html>
+
 
