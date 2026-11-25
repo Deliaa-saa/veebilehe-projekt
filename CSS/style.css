@@ -24,6 +24,16 @@ header {
     font-size: 2em;
     color: #ffff;
     user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Logo pilt päises teksti "Doversoft" ees */
+.logo img {
+    width: 40px;
+    height: 40px;
 }
 .navigation a {
     position: relative;
