@@ -19,3 +19,27 @@ btnPopup.addEventListener('click', ()=> {
 iconClose.addEventListener('click', ()=> {
   wrapper.classList.remove('active-popup');
 });
+
+let currentSlide = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+
+    if (slides.length === 0) return;
+
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+
+    slides[currentSlide].classList.add('active');
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
+}
+
+showSlides();
+
+setInterval(showSlides, 4000);
