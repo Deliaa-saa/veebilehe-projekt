@@ -660,3 +660,71 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/* POPULAARSETE TOODETE PEALKIRI */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #162938;
+    margin: 0 0 8px 0;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #777;
+}
+
+/* TOOTEKAARTIDE ÜHTLUSTAMINE */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-bottom {
+    margin-top: auto;
+}
+
+/* NÄDALA TOOTE PAIGUTUS */
+
+.weekly-product {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-height: 350px;
+    padding: 30px;
+}
+
+.weekly-placeholder {
+    width: 260px;
+    height: 230px;
+    flex: 0 0 260px;
+}
+
+.weekly-info {
+    flex: 1;
+}
+
+/* LEHE ÜLDINE VAHE */
+
+.home-products {
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
