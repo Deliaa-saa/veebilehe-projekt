@@ -370,3 +370,235 @@ header {
     align-items: center;
     text-decoration: none;
 }
+
+
+/* =================================
+   AVALEHT – POPULAARSED TOOTED
+================================= */
+
+.home-products {
+    max-width: 1450px;
+    margin: 60px auto;
+    padding: 0 40px;
+    color: #162938;
+}
+
+/* Sektsiooni pealkiri */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #162938;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 15px;
+}
+
+.view-all {
+    color: #162938;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    color: #526d80;
+}
+
+/* Toodete paigutus */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+}
+
+/* Toote kaart */
+
+.product-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #e5e8eb;
+    border-radius: 12px;
+    padding: 18px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(22, 41, 56, 0.12);
+}
+
+/* Populaarse toote märgis */
+
+.popular-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #162938;
+    color: #fff;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Toote pildi asemel kast */
+
+.product-placeholder {
+    height: 230px;
+    background: #f1f3f5;
+    border: 1px solid #e1e5e8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ba5ad;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Toote info */
+
+.product-info h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #162938;
+    margin-bottom: 10px;
+}
+
+.product-code {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Hind ja ostukorvi nupp */
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-price {
+    font-size: 21px;
+    font-weight: 700;
+    color: #162938;
+}
+
+.add-cart {
+    background: #162938;
+    color: #fff;
+    border: 2px solid #162938;
+    padding: 11px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background: #fff;
+    color: #162938;
+}
+
+/* Nädala toode */
+
+.weekly-product {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #fff;
+    border: 1px solid #e5e8eb;
+    border-radius: 12px;
+    padding: 35px;
+    margin-top: 50px;
+    box-shadow: 0 5px 20px rgba(22, 41, 56, 0.07);
+}
+
+/* Nädala toote tühi kast */
+
+.weekly-placeholder {
+    flex: 0 0 260px;
+    height: 250px;
+    background: #f1f3f5;
+    border: 1px solid #e1e5e8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ba5ad;
+    font-size: 18px;
+}
+
+.weekly-info {
+    flex: 1;
+}
+
+.weekly-label {
+    display: block;
+    color: #162938;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.weekly-info h2 {
+    font-size: 24px;
+    color: #162938;
+    margin-bottom: 15px;
+}
+
+.weekly-price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #162938;
+}
+
+/* Taimer */
+
+.countdown-title {
+    color: #777;
+    margin: 20px 0 10px;
+}
+
+.countdown {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.countdown div {
+    background: #162938;
+    color: #fff;
+    padding: 10px 16px;
+    display: flex;
+    gap: 4px;
+    align-items: baseline;
+    border-radius: 3px;
+}
+
+.countdown strong {
+    font-size: 23px;
+}
+
+.countdown span {
+    font-size: 13px;
+}
+
+.weekly-button {
+    padding: 13px 30px;
+    font-size: 16px;
+}
