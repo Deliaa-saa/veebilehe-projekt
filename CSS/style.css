@@ -372,18 +372,16 @@ header {
 }
 
 
-/* =================================
-   AVALEHT – POPULAARSED TOOTED
-================================= */
+/* AVALEHT */
 
 .home-products {
+    width: 90%;
     max-width: 1450px;
-    margin: 60px auto;
-    padding: 0 40px;
+    margin: 160px auto 60px;
     color: #162938;
 }
 
-/* Sektsiooni pealkiri */
+/* Pealkiri */
 
 .section-heading {
     display: flex;
@@ -394,8 +392,9 @@ header {
 
 .section-heading h2 {
     font-size: 30px;
-    margin-bottom: 5px;
+    font-weight: 700;
     color: #162938;
+    margin-bottom: 8px;
 }
 
 .section-heading p {
@@ -414,19 +413,20 @@ header {
     color: #526d80;
 }
 
-/* Toodete paigutus */
+/* Tooted */
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 22px;
 }
 
-/* Toote kaart */
-
 .product-card {
     position: relative;
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    background: white;
     border: 1px solid #e5e8eb;
     border-radius: 12px;
     padding: 18px;
@@ -438,21 +438,21 @@ header {
     box-shadow: 0 10px 25px rgba(22, 41, 56, 0.12);
 }
 
-/* Populaarse toote märgis */
+/* Populaarne märgis */
 
 .popular-label {
     position: absolute;
     top: 15px;
     left: 15px;
     background: #162938;
-    color: #fff;
+    color: white;
     padding: 7px 12px;
     font-size: 13px;
     font-weight: 600;
     border-radius: 4px;
 }
 
-/* Toote pildi asemel kast */
+/* Tühi tootepildi kast */
 
 .product-placeholder {
     height: 230px;
@@ -469,6 +469,12 @@ header {
 
 /* Toote info */
 
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .product-info h3 {
     font-size: 17px;
     font-weight: 600;
@@ -482,13 +488,14 @@ header {
     margin-bottom: 20px;
 }
 
-/* Hind ja ostukorvi nupp */
+/* Hind ja nupp */
 
 .product-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    margin-top: auto;
 }
 
 .product-price {
@@ -499,7 +506,7 @@ header {
 
 .add-cart {
     background: #162938;
-    color: #fff;
+    color: white;
     border: 2px solid #162938;
     padding: 11px 14px;
     font-size: 14px;
@@ -510,7 +517,7 @@ header {
 }
 
 .add-cart:hover {
-    background: #fff;
+    background: white;
     color: #162938;
 }
 
@@ -519,20 +526,19 @@ header {
 .weekly-product {
     display: flex;
     align-items: center;
-    gap: 50px;
-    background: #fff;
+    gap: 40px;
+    min-height: 350px;
+    padding: 30px;
+    margin-top: 50px;
+    background: white;
     border: 1px solid #e5e8eb;
     border-radius: 12px;
-    padding: 35px;
-    margin-top: 50px;
     box-shadow: 0 5px 20px rgba(22, 41, 56, 0.07);
 }
 
-/* Nädala toote tühi kast */
-
 .weekly-placeholder {
     flex: 0 0 260px;
-    height: 250px;
+    height: 230px;
     background: #f1f3f5;
     border: 1px solid #e1e5e8;
     border-radius: 5px;
@@ -567,8 +573,6 @@ header {
     color: #162938;
 }
 
-/* Taimer */
-
 .countdown-title {
     color: #777;
     margin: 20px 0 10px;
@@ -582,7 +586,7 @@ header {
 
 .countdown div {
     background: #162938;
-    color: #fff;
+    color: white;
     padding: 10px 16px;
     display: flex;
     gap: 4px;
@@ -604,181 +608,5 @@ header {
 }
 
 
-/* POPULAARSETE TOODETE PEALKIRI */
 
-.section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
-.section-heading h2 {
-    display: block;
-    font-size: 30px;
-    font-weight: 700;
-    color: #162938;
-    margin: 0 0 8px 0;
-}
-
-.section-heading p {
-    margin: 0;
-    color: #777;
-}
-
-/* TOOTEKAARTIDE ÜHTLUSTAMINE */
-
-.product-card {
-    display: flex;
-    flex-direction: column;
-    min-height: 480px;
-}
-
-.product-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.product-bottom {
-    margin-top: auto;
-}
-
-/* NÄDALA TOOTE PAIGUTUS */
-
-.weekly-product {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    min-height: 350px;
-    padding: 30px;
-}
-
-.weekly-placeholder {
-    width: 260px;
-    height: 230px;
-    flex: 0 0 260px;
-}
-
-.weekly-info {
-    flex: 1;
-}
-
-/* LEHE ÜLDINE VAHE */
-
-.home-products {
-    margin-top: 45px;
-    margin-bottom: 60px;
-}
-
-/* Avalehe sisu algab päise alt */
-
-.home-products {
-    margin-top: 160px;
-    margin-bottom: 60px;
-}
-
-.home-products {
-    display: block;
-    width: 90%;
-    max-width: 1450px;
-    margin: 160px auto 60px;
-    padding: 0;
-    color: #162938;
-}
-
-.popular-section {
-    display: block;
-}
-
-/* Pealkiri */
-
-.section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.section-heading h2 {
-    display: block;
-    font-size: 30px;
-    font-weight: 700;
-    color: #162938;
-    margin: 0 0 8px;
-}
-
-.section-heading p {
-    margin: 0;
-    color: #777;
-}
-
-.view-all {
-    color: #162938;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* Tooted */
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 22px;
-}
-
-.product-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 480px;
-    padding: 18px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-}
-
-.product-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.product-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    margin-top: auto;
-}
-
-/* Nädala toode */
-
-.weekly-product {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    min-height: 350px;
-    padding: 30px;
-    margin-top: 50px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(22,41,56,0.07);
-}
-
-.weekly-placeholder {
-    flex: 0 0 260px;
-    height: 230px;
-    background: #f1f3f5;
-    border: 1px solid #e1e5e8;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9ba5ad;
-}
-
-.weekly-info {
-    flex: 1;
-}
