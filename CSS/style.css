@@ -603,64 +603,6 @@ header {
     font-size: 16px;
 }
 
-/* Avalehe sisu nähtavaks */
-
-.home-products {
-    display: block !important;
-    width: 90%;
-    max-width: 1400px;
-    margin: 50px auto;
-    position: relative;
-    z-index: 1;
-    color: #162938;
-}
-
-.popular-section,
-.product-grid,
-.weekly-product {
-    display: grid;
-}
-
-.product-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-.product-card,
-.weekly-product {
-    display: block;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-}
-
-.product-placeholder,
-.weekly-placeholder {
-    height: 200px;
-    background: #f1f3f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
-}
-
-.weekly-product {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.weekly-placeholder {
-    width: 260px;
-    flex-shrink: 0;
-}
-
-@media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 
 /* POPULAARSETE TOODETE PEALKIRI */
 
@@ -727,4 +669,116 @@ header {
 .home-products {
     margin-top: 45px;
     margin-bottom: 60px;
+}
+
+/* Avalehe sisu algab päise alt */
+
+.home-products {
+    margin-top: 160px;
+    margin-bottom: 60px;
+}
+
+.home-products {
+    display: block;
+    width: 90%;
+    max-width: 1450px;
+    margin: 160px auto 60px;
+    padding: 0;
+    color: #162938;
+}
+
+.popular-section {
+    display: block;
+}
+
+/* Pealkiri */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #162938;
+    margin: 0 0 8px;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #777;
+}
+
+.view-all {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Tooted */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    padding: 18px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+/* Nädala toode */
+
+.weekly-product {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-height: 350px;
+    padding: 30px;
+    margin-top: 50px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(22,41,56,0.07);
+}
+
+.weekly-placeholder {
+    flex: 0 0 260px;
+    height: 230px;
+    background: #f1f3f5;
+    border: 1px solid #e1e5e8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ba5ad;
+}
+
+.weekly-info {
+    flex: 1;
 }
