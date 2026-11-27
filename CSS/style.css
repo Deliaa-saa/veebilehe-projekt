@@ -602,3 +602,61 @@ header {
     padding: 13px 30px;
     font-size: 16px;
 }
+
+/* Avalehe sisu nähtavaks */
+
+.home-products {
+    display: block !important;
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 1;
+    color: #162938;
+}
+
+.popular-section,
+.product-grid,
+.weekly-product {
+    display: grid;
+}
+
+.product-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.product-card,
+.weekly-product {
+    display: block;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.product-placeholder,
+.weekly-placeholder {
+    height: 200px;
+    background: #f1f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+}
+
+.weekly-product {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.weekly-placeholder {
+    width: 260px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
