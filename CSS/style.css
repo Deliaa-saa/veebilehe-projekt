@@ -74,7 +74,11 @@ header {
 
 /*Sisselogimise lehe kujundus */
 .wrapper {
-    position: relative;
+    /*position: relative;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -88,10 +92,13 @@ header {
     overflow: hidden;
     transform: scale(0);
     transition: transforn .5s ease, height .2s ease;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper.active-popup {
-   transform: scale(1); 
+    transform: scale(1);
+    position: fixed;
+    z-index: 9999;
 }
 
 .wrapper.active {
