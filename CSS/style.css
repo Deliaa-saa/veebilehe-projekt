@@ -7,6 +7,11 @@
 body {
     min-height: 100vh;
     background: #fff;
+    display: flex;
+    flrx-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 30px;
 }
 header {
     position: fixed;
@@ -74,7 +79,7 @@ header {
 
 /*Sisselogimise lehe kujundus */
 .wrapper {
-    position: relative
+    position: relative;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -87,7 +92,7 @@ header {
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transforn .5s ease, height .2s ease;
+    transition: transform .5s ease, height .2s ease;
 }
 
 .wrapper.active-popup {
@@ -262,19 +267,12 @@ header {
     width: 90%;
     max-width: 1200px;
     height: 350px;
-    margin: 50px auto;
+    margin: 0 auto 50px auto;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
     background: #eee;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.20);
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .slide {
