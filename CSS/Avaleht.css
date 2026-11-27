@@ -9,6 +9,13 @@
     background: #eee;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .slide {
     display: none;
     width: 100%;
